@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <style>
+        iframe {
+            width: 786px;
+            height: 600px;
+            border: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+  
+<body>
+    <center>
+        <h2 style="color:rgb(0, 255, 0)">Meteostanice</h2>
+        <h4 style="color:purple">Webové rozhraní zobrazuje graf naměřených hodnot za posledních čas(7 dnu jsem nestihl, ale na pristi patek to bude slibuju).</h4>
+        <iframe id="x"
+                src="https://thingspeak.com/channels/2007003/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&timescale=10&type=line" 
+                width="800" 
+                height="600"
+                frameborder="0" 
+                style="border:0" 
+                allowfullscreen>
+      </iframe>
+      <iframe id="y"
+                src="https://thingspeak.com/channels/2007003/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&timescale=20&type=line" 
+                width="800" 
+                height="600"
+                frameborder="0" 
+                style="border:0" 
+                allowfullscreen>
+      </iframe>
+      <iframe id="z"
+                src="https://thingspeak.com/channels/2007003/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&timescale=20&type=line" 
+                width="800" 
+                height="600"
+                frameborder="0" 
+                style="border:0" 
+                allowfullscreen>
+      </iframe>
+        <input type="button"
+               id="btn" 
+               value="Obnovit" />
+  
+        <script>
+            function reload() {
+                document.getElementById('x,y,z').src += '';
+            }
+            btn.onclick = reload;
+        </script>
+    </center>
+  
+</body>
+  
+</html>
