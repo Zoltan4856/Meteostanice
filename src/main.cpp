@@ -90,10 +90,10 @@ if (M5.BtnA.isPressed()) {
     M5.lcd.print("Teplota: " + String(tmp));
     M5.lcd.setCursor(0, 30);
     M5.lcd.setTextColor(RED);
-    M5.lcd.print("Humidity: " + String(hum));
+    M5.lcd.print("Vlhkost: " + String(hum));
     M5.lcd.setCursor(0, 50);
     M5.lcd.setTextColor(BLUE);
-    M5.lcd.print("Pressure: " + String(pressure/100));
+    M5.lcd.print("Tlak: " + String(pressure/100));
     
 } 
 else if (M5.BtnB.isPressed()) {
