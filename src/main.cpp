@@ -6,8 +6,8 @@
 #include <LiquidCrystal.h>
 
 
-const char* ssid = "vivien-mbinet.cz";    /*Wifina*/
-const char* password = "vivien21122007";  
+const char* ssid = "LF";    /*Wifina*/
+const char* password = "hesloksiti";  
 
 
 WiFiClient  client;
